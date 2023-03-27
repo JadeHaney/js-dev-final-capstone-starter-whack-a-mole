@@ -5,6 +5,7 @@ const startButton = document.querySelector("#start");
 const score = document.querySelector("#score"); // Use querySelector() to get the score element
 const timerDisplay = document.querySelector("#timer"); // use querySelector() to get the timer element.
 
+
 let time = 10;
 let timer;
 let lastHole = 0;
@@ -123,6 +124,7 @@ function startGame() {
   // showUp();
   // return "game started";
   setDuration(10);
+  setEventListeners()
   showUp();
   return "game started";
 }
@@ -194,6 +196,7 @@ function updateScore() {
   return points;
 }
 
+
 /**
  *
  * This function clears the score by setting `points = 0`. It also updates
@@ -263,7 +266,7 @@ function whack(event) {
  */
 function setEventListeners() {
   // TODO: Write your code here
-  moles.forEach((moles) => moles.addAventListener("click", whack));
+  moles.forEach((moles) => moles.addEventListener("click", whack));
 
   return moles;
 }
@@ -297,17 +300,7 @@ function stopGame() {
  * is clicked.
  *
  */
-function startGame() {
-  clearScore();
-  //setDuration(10);
-  setDuration(10);
-  //showUp();
-  showUp();
-  setEventListeners();
-  startTimer();
-  play();
-  return "game started";
-}
+
 
 startButton.addEventListener("click", startGame);
 
