@@ -12,6 +12,7 @@ let lastHole = 0;
 let points = 0;
 let difficulty = "hard";
 
+
 /**
  * Generates a random integer within a range.
  *

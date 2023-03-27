@@ -13,7 +13,7 @@ html {
 h1 {
   text-align: center;
   font-size: 90px;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   padding: 1px;
   -webkit-text-stroke: 2px black;
@@ -22,6 +22,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 40px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   color: white;
   -webkit-text-stroke: 1px black;
 }
@@ -33,7 +34,7 @@ h2 {
 }
 
 #start {
-  background-color: brown;
+  background-color: green;
   color: white;
   padding-left: 18px;
   padding-right: 18px;
@@ -44,6 +45,7 @@ h2 {
 #start {
     text-align: center;
     font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 #timer{
